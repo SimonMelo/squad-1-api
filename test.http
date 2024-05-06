@@ -1,0 +1,7 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "cpfCnpj": "12345678901",
+  "password": "senha1234"
+}

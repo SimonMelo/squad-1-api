@@ -22,8 +22,12 @@ Permite que um novo usuário se registre fornecendo seu CPF/CNPJ e senha.
 **Corpo da solicitação:**
 ```json
 {
-  "cpfCnpj": "string",
-  "password": "string"
+   "nome": "string",
+   "cpfCnpj": "string",
+   "email": "string",
+   "confirmEmail": "string",
+   "password": "string",
+   "confirmPassword": "string"
 }
 ```
 
@@ -43,6 +47,23 @@ Permite que um usuário registrado faça login fornecendo seu CPF/CNPJ e senha.
 }
 ```
 
+### Resetar senha do Usuário
+
+```
+POST /signup
+```
+
+Permite que o usuário resete sua senha fornecendo seu e-mail e senha nova.
+
+**Corpo da solicitação:**
+```json
+{
+   "email": "string",
+   "newPassword": "string",
+   "confirmPassword": "string"
+}
+```
+
 ### Obter Todos os Usuários
 
 ```
@@ -58,6 +79,14 @@ GET /protected
 ```
 
 Uma rota protegida que requer autenticação JWT. Somente usuários autenticados podem acessá-la.
+
+### Refresh token
+
+```
+POST /reset-token
+```
+
+Uma rota que reseta o token de autenticação do usuários após 1h.
 
 ## Instalação e Execução
 

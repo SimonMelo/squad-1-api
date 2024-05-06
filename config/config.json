@@ -1,26 +1,26 @@
 {
   "development": {
     "username": "root",
-    "password": "UAiVrM2lhmApnCjQfL5MmqPtHKFQzYIf",
+    "password": "C4$4M3l0",
     "database": "squad1db",
     "host": "dpg-coq11cljm4es73adcm3g-a",
     "port": "5432",
-    "dialect": "postgresql"
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "UAiVrM2lhmApnCjQfL5MmqPtHKFQzYIf",
+    "password": "C4$4M3l0",
     "database": "squad1db",
     "host": "dpg-coq11cljm4es73adcm3g-a",
     "port": "5432",
-    "dialect": "postgresql"
+    "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "UAiVrM2lhmApnCjQfL5MmqPtHKFQzYIf",
+    "password": "C4$4M3l0",
     "database": "squad1db",
     "host": "dpg-coq11cljm4es73adcm3g-a",
     "port": "5432",
-    "dialect": "postgresql"
+    "dialect": "mysql"
   }
 }

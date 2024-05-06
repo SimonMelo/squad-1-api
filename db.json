@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Nome do Usuário",
+      "cpfCnpj": "12345678901",
+      "email": "exemplo@email.com",
+      "password": "$2a$10$evFFDfD/r7HTZGa7Y2DZC.a3ufyOu3VEPNbefvLzvQketEMGIcAxG",
+      "createdAt": "2024-05-06T18:45:48.545Z"
+    },
+    {
+      "id": 2,
+      "name": "Gabriel",
+      "cpfCnpj": "01234567890",
+      "email": "gabriel@live.com",
+      "password": "$2a$10$OKqegCiXeCxFpTm7Xtq9muBxa69qCoVso7ZlvQfMJfJQBd/noBfDq",
+      "createdAt": "2024-05-06T18:46:43.884Z"
+    }
+  ],
+  "nextUserId": 3
+}
