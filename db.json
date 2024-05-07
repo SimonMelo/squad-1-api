@@ -15,7 +15,15 @@
       "email": "gabriel@live.com",
       "password": "$2a$10$OKqegCiXeCxFpTm7Xtq9muBxa69qCoVso7ZlvQfMJfJQBd/noBfDq",
       "createdAt": "2024-05-06T18:46:43.884Z"
+    },
+    {
+      "id": 3,
+      "name": "Leticia",
+      "cpfCnpj": "30030030030",
+      "email": "email4@gmail.com",
+      "password": "$2a$10$u/dkS5T0ri1MNb4OCN0HOuUMF8/7kcaGeEReR6cj9ipTaIHDdsTLq",
+      "createdAt": "2024-05-07T20:24:54.849Z"
     }
   ],
-  "nextUserId": 3
+  "nextUserId": 4
 }

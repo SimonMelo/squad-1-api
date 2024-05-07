@@ -1,7 +1,2 @@
-POST http://localhost:3000/login
+GET http://localhost:3000/users
 Content-Type: application/json
-
-{
-  "cpfCnpj": "12345678901",
-  "password": "senha1234"
-}

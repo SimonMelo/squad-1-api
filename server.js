@@ -51,6 +51,7 @@ const writeDBFile = async (data) => {
   }
 }
 
+//Rota de login
 app.post("/login", async (req, res) => {
   const { cpfCnpj, password } = req.body
 
@@ -70,6 +71,7 @@ app.post("/login", async (req, res) => {
   }
 })
 
+//Rota de cadastro
 app.post("/signup", async (req, res) => {
   const { name, cpfCnpj, email, confirmEmail, password, confirmPassword } =
     req.body
@@ -114,6 +116,7 @@ app.post("/signup", async (req, res) => {
   }
 })
 
+//Rota para verificar usuários existentes
 app.get("/users", async (req, res) => {
   try {
     const db = await readDBFile()
@@ -124,6 +127,7 @@ app.get("/users", async (req, res) => {
   }
 })
 
+//Rota para Esqueci minha senha
 app.post("/reset-password", async (req, res) => {
   const { email, newPassword, confirmPassword } = req.body
 
@@ -156,6 +160,7 @@ app.post("/reset-password", async (req, res) => {
   }
 })
 
+//Rota para resetar token de acesso após 1h
 app.post("/reset-token", authenticateJWT, (req, res)=> {
   try {
     const newToken = generateNewToken(req.user.userId)
@@ -166,6 +171,7 @@ app.post("/reset-token", authenticateJWT, (req, res)=> {
   }
 })
 
+//Rota de acesso para usuários já com token
 app.get("/protected", authenticateJWT, (req, res) => {
   res.json({ message: `Autenticado como ${req.user.cpfCnpj}` })
 })
