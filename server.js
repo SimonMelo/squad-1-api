@@ -3,6 +3,7 @@ const bodyParser = require("body-parser")
 const bcrypt = require("bcryptjs")
 const jwt = require("jsonwebtoken")
 const jsonfile = require("jsonfile")
+const cors = require('cors')
 
 const app = express()
 const PORT = 3000
@@ -13,6 +14,7 @@ const generateNewToken = (nextUserId) => {
   return jwt.sign({ userId }, secretKey, { expiresIn: '1h' })
 }
 
+app.use(cors())
 app.use(bodyParser.json())
 
 const authenticateJWT = (req, res, next) => {
